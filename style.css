@@ -124,7 +124,6 @@ nav {
 }
 .collage-item:hover {
     color: rgba(9,9,9,0.77);
-    margin-top: -20px;
     transition: 300ms ease;
     box-shadow: 0 5px 10px rgba(9,9,9,0.77);
 }
@@ -136,7 +135,7 @@ nav {
 .collage-item:nth-child(2){
     position: absolute;
     top:0;
-    right: 34%;
+    right: 33.7%;
 }
 .collage-item:nth-child(3){
     position: absolute;
@@ -151,7 +150,7 @@ nav {
 .collage-item:nth-child(5){
     position: absolute;
     bottom:0;
-    right: 34%;
+    right: 33.7%;
 }
 .collage-item:nth-child(6){
     position: absolute;
