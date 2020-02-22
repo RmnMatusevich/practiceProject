@@ -77,7 +77,9 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
 }
-
+.mob-menu {
+    display: none;
+}
 @media (max-width: 1150px) {
     .logo {
         left: 40px;
@@ -110,60 +112,36 @@ nav {
 
 
 .collage {
-    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
     position: relative;
-    height: 1100px;
+    justify-content: center;
     margin-bottom: 50px;
+    max-width: 1200px;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 .collage-item {
-    width: 32.3%;
-    height: 540px;
+    width: 350px;
+    height: 440px;
     border: 1px solid rgba(100,100,100,0.77);
     display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 15px;
 }
 .collage-item:hover {
     color: rgba(9,9,9,0.77);
     transition: 300ms ease;
     box-shadow: 0 5px 10px rgba(9,9,9,0.77);
 }
-.collage-item:nth-child(1){
-    position: absolute;
-    top:0;
-    left: 0;
-}
-.collage-item:nth-child(2){
-    position: absolute;
-    top:0;
-    right: 33.7%;
-}
-.collage-item:nth-child(3){
-    position: absolute;
-    top:0;
-    right: 0;
-}
-.collage-item:nth-child(4){
-    position: absolute;
-    bottom:0;
-    left: 0;
-}
-.collage-item:nth-child(5){
-    position: absolute;
-    bottom:0;
-    right: 33.7%;
-}
-.collage-item:nth-child(6){
-    position: absolute;
-    bottom:0;
-    right: 0;
-}
-
 
 .collage-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 150px;
+    max-height: 120px;
     padding-top: 60px;
     margin-bottom: 30px;
 }
@@ -187,5 +165,88 @@ nav {
     margin-right: auto;
 }
 
+@media screen and (max-width: 1000px) {
+    .navigation {
+        display: none;
+    }
+    .logo-image {
+        width: 150px;
+    }
+    .logo-text {
+        display: none;
+    }
+    nav {
+        height: 60px;
+    }
+    .logo {
+        top: -5px;
+    }
 
+    .navigation {
+        display: none;
+    }
+    .navigation-item {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+        width: 35px;
+        height: 25px;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+        cursor: pointer;
+    }
+    .menu-button span, .menu-button span:before, .menu-button span:after {
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        transform: translateY(10px)
+    }
+    .menu-button span:before, .menu-button span:after {
+        content: '';
+    }
+
+    .menu-button span:before {
+        transform: translateY(-10px);
+    }
+
+    .menu-button span:after {
+        transform: translateY(10px);
+    }
+
+    .main-projects {
+        width: 90%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 815px) {
+    nav {
+        margin-bottom: 40px;
+    }
+    .collage {
+        width: 100%;
+        flex-direction: column;
+    }
+    .collage-item {
+        width: 100%;
+        height: 330px;
+        margin-left: 0;
+    }
+    .collage-image {
+        padding-top: 40px;
+    }
+    .collage-tittle {
+        font-size: 20px;
+    }
+
+    .collage-description {
+        font-size: 14px;
+    }
+}
 
