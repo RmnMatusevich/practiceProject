@@ -181,6 +181,7 @@ nav {
     }
     .logo {
         top: -5px;
+        left: 5%;
     }
 
     .navigation {
@@ -226,7 +227,7 @@ nav {
 }
 
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 800px) {
     nav {
         margin-bottom: 40px;
     }
