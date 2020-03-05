@@ -35,7 +35,17 @@ nav {
 
 
 
-
+.navigation__active {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: black;
+}
 
 .navigation {
     width: 600px;
@@ -76,9 +86,6 @@ nav {
     position: absolute;
     padding-left: 20px;
     padding-right: 20px;
-}
-.mob-menu {
-    display: none;
 }
 @media (max-width: 1150px) {
     .logo {
@@ -127,7 +134,6 @@ nav {
     width: 350px;
     height: 440px;
     border: 1px solid rgba(100,100,100,0.77);
-    display: inline-block;
     margin-bottom: 15px;
     margin-left: 7.5px;
     margin-right: 7.5px;
@@ -184,12 +190,6 @@ nav {
         left: 5%;
     }
 
-    .navigation {
-        display: none;
-    }
-    .navigation-item {
-        display: none;
-    }
     .menu-button {
         display: block;
         width: 35px;
