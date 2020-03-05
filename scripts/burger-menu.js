@@ -17,13 +17,13 @@ function openHide () {
 menu.addEventListener('click', openHide);
 
 
-const navigationItem = document.getElementsByClassName('navigation-item');
+// const navigationItem = document.getElementsByClassName('navigation-item');
 
 
 
-navigationItem[0].addEventListener('click', openHide);
+// navigationItem[0].addEventListener('click', openHide);
 
 
-for (let i = 0; i<navigationItem.length; i++) {
-    navigationItem[i].addEventListener('click', openHide)
-}
+// for (let i = 0; i<navigationItem.length; i++) {
+//     navigationItem[i].addEventListener('click', openHide)
+// }

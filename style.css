@@ -33,7 +33,9 @@ nav {
     color: rgba(125,125,125,0.97);
 }
 
-
+.mob-navigation { 
+    display: none;
+}
 
 .navigation__active {
     position: fixed;
