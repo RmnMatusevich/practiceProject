@@ -33,20 +33,6 @@ const collageObj = [
 ];
 const collage = document.getElementsByClassName('collage')[0];
 
-// const collageItem = document.createElement('div');
-// collageItem.className = 'collage-item';
-
-// const img = document.createElement('img');
-// img.className = 'collage-image';
-// collageItem.append(img);
-
-// const tittle = document.createElement('h6');
-// tittle.className = 'collage-tittle';
-// collageItem.append(tittle);
-
-// const description = document.createElement('p');
-// description.className = 'collage-description';
-// collageItem.append(description);
 
 window.onload = function () {
 collageObj.map((i) => {
