@@ -29,7 +29,8 @@ const collageObj = [
         src: "https://spring.io/images/projects/spring-data-flow-9eb1733b76b6cd62cbdd9bc9a2b04e56.svg",
         tittle: "Spring Cloud Data Flow",
         description: "An orchestration service for composable data microservice applications on modern runtimes."
-    }
+    },
+    
 ];
 const collage = document.getElementsByClassName('collage')[0];
 
@@ -55,4 +56,31 @@ collageItem.append(description);
     description.innerHTML = i.description;
     collage.append(collageItem);
 });
+}
+
+//SEARCH
+
+
+const input = document.getElementById('search-input');
+
+input.addEventListener('change',search);
+ 
+
+
+function search() {
+    let regExp = new RegExp(`/${input.value}/`);
+    console.log(input.value);
+        
+    collageObj.map((i) => {
+        console.log(input.value);
+        console.log(i.description);
+        
+        if (i.description.match(regExp) == null){
+            console.log("no");
+            
+        }else {
+            console.log("yes");
+            
+        }
+    })
 }

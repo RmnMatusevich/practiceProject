@@ -111,6 +111,29 @@ nav {
 }
 
 
+#search {
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+width: 50%;
+height: 140px;
+margin: 0 auto;
+text-align: center;
+}
+
+#search-label {
+font-size: 38px;
+font-family: "Open Sans", sans-serif;
+font-weight: 600;
+}
+
+#search-input {
+font-family: "Open Sans", sans-serif;
+font-size: 36px;
+height: 40px;
+}
+
+
 
 .collage {
     margin-left: auto;
