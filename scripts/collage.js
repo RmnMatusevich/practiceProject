@@ -75,12 +75,19 @@ function search() {
         console.log(input.value);
         console.log(i.description);
         
-        if (i.description.match(regExp) == null){
-            console.log("no");
-            
+        if (i.description.indexOf(`${input.value}`) >= 0) {
+            console.log(`yes ${i.description.indexOf(input.value)}`);
+
         }else {
-            console.log("yes");
+            collageObj.splice(collageObj.indexOf(i), 1)
             
         }
+        // if (i.description.match(regExp) == null){
+        //     console.log("no");
+            
+        // }else {
+        //     console.log("yes");
+            
+        // }
     })
 }
