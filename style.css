@@ -131,8 +131,12 @@ font-weight: 600;
 font-family: "Open Sans", sans-serif;
 font-size: 36px;
 height: 40px;
+border: 2px solid black;
+border-radius: 5px;
 }
-
+#search-input:focus {
+    background-color: rgb(226, 222, 216);
+}
 
 
 .collage {
@@ -208,6 +212,12 @@ height: 40px;
     }
 
 
+    #search {
+        width: 100%;
+    }
+    #search-input {
+        width: 100%;
+    }
 
 
     .mob-menu {
