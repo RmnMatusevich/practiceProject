@@ -14,6 +14,22 @@ const collageObj = [
         src: "https://spring.io/images/projects/spring-data-flow-9eb1733b76b6cd62cbdd9bc9a2b04e56.svg",
         tittle: "Spring Cloud Data Flow",
         description: "An orchestration service for composable data microservice applications on modern runtimes."
+    },
+    {
+        src: "https://spring.io/images/projects/spring-cloud-81fe04ab129ab99da0e7c7115bb09920.svg",
+        tittle: "Spring Cloud",
+        description: "Provides a set of tools for common patterns in distributed systems. Useful for building and deploying microservices"
+
+    },
+    {
+        src: "https://spring.io/images/projects/spring-data-79cc203ed8c54191215a60f9e5dc638f.svg",
+        tittle: "Spring Data",
+        description: "Provides a consistent approach to data access – relational, non-relational, map-reduce, and beyond."
+    },
+    {
+        src: "https://spring.io/images/projects/spring-integration-ed45c92142d821851bf6c771f4c556bb.svg?v=2",
+        tittle: "Spring Integration",
+        description: "Supports the well-known Enterprise Integration Patterns via lightweight messaging and declarative adapters"
     }
 ];
 const collage = document.getElementsByClassName('collage')[0];
@@ -66,22 +82,13 @@ function search() {
     const text = document.createElement('h1');
     text.innerHTML = "No results!"
     text.className = 'text';
-    // if (newCollageObj.length === 0) {
-    //     collage.append(text)
-    // }
+    if (newCollageObj.length === 0) {
+        collage.append(text);
+    } else if (newCollageObj.length > 0) {
+        let textArray = document.getElementsByClassName('text');
+        for (let i of textArray) {
+            i.remove();
+        }
+    }
+
 }
-
-
-
-
-
-let test = document.getElementById('test');
-
-test.addEventListener('click', func);
-
-let func = () => {
-    console.log("div")
-    console.log(event.target);
-}
-
-test.removeEventListener('click', test);
